@@ -29,6 +29,9 @@ export default class App extends React.Component {
       Guntur_total_confirmed: "0",
       Guntur_total_active: "0",
       Guntur_total_deaths: "0",
+      khammam_total_confirmed: "0",
+      khammam_total_active: "0",
+      khammam_total_deaths: "0",
       isLoading: "true",
       
       button_text: "Get World stats"
@@ -131,6 +134,7 @@ export default class App extends React.Component {
           Guntur_total_deaths:
             responseJson.state_wise["Andhra Pradesh"].district["Guntur"]
               .deceased
+              
         });
       })
       .catch(err => {
@@ -300,7 +304,6 @@ export default class App extends React.Component {
               <Text style={{ marginTop: 10, fontSize: 20, color: "#E8290B" }}>
                 Guntur deaths: {this.state.Guntur_total_deaths}{" "}
               </Text>
-              
             </View>
             
           </View>
