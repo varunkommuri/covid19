@@ -106,6 +106,7 @@ export default class App extends React.Component {
       .then(responseJson => {
        // console.log("hello");
         this.setState({
+          button_text: "Get World stats",
           isLoading: "false",
           total_cases: responseJson.total_values.confirmed,
           total_active: responseJson.total_values.active,
