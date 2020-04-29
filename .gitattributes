@@ -1,2 +1,4 @@
 * linguist-vendored
 *.js linguist-vendored=false
+
+#this file is added because github is showing repository as java project automatically, so to disable it.
